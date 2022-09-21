@@ -60,7 +60,6 @@
 		53F08C4825ECEFFD00BDFFB3 /* PusherChannel+EncryptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F08C4725ECEFFD00BDFFB3 /* PusherChannel+EncryptionHelpers.swift */; };
 		57F6E444269C5A2E00ECFAD4 /* TestObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6E443269C5A2E00ECFAD4 /* TestObjects.swift */; };
 		67502D9B28DB0A02004815D4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9A28DB0A02004815D4 /* LICENSE */; };
-		67502D9D28DB0A0A004815D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9C28DB0A0A004815D4 /* README.md */; };
 		67502D9F28DB0AC9004815D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9E28DB0AC9004815D4 /* README.md */; };
 		67502DA128DB0AD4004815D4 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502DA028DB0AD4004815D4 /* CHANGELOG.md */; };
 		67502DA328DB0AD7004815D4 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502DA228DB0AD7004815D4 /* LICENSE.md */; };
@@ -97,7 +96,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3301FED22051AB6400AE591A /* Carthage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Carthage.xcconfig; path = ../Carthage.xcconfig; sourceTree = "<group>"; };
 		3342F3BB1D808AC500C0296E /* ClientEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientEventTests.swift; sourceTree = "<group>"; };
 		33831C891A9CF61600B124F1 /* PusherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PusherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33831C8D1A9CF61600B124F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,20 +150,19 @@
 		57A44492264942B700984790 /* NWWebSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NWWebSocket.xcframework; path = Carthage/Build/NWWebSocket.xcframework; sourceTree = "<group>"; };
 		57A44494264942BB00984790 /* TweetNacl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TweetNacl.xcframework; path = Carthage/Build/TweetNacl.xcframework; sourceTree = "<group>"; };
 		57F6E443269C5A2E00ECFAD4 /* TestObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjects.swift; sourceTree = "<group>"; };
-		67502D9A28DB0A02004815D4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = TweetNacl/LICENSE; sourceTree = "<group>"; };
-		67502D9C28DB0A0A004815D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		67502D9E28DB0AC9004815D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = NWWebSocket/README.md; sourceTree = "<group>"; };
-		67502DA028DB0AD4004815D4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = NWWebSocket/CHANGELOG.md; sourceTree = "<group>"; };
-		67502DA228DB0AD7004815D4 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = NWWebSocket/LICENSE.md; sourceTree = "<group>"; };
-		6764B02528DA1D6B00D95ABB /* NWConnection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NWConnection+Extension.swift"; path = "NWWebSocket/Extension/NWConnection+Extension.swift"; sourceTree = "<group>"; };
-		6764B02728DA1D9200D95ABB /* WebSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketConnection.swift; path = NWWebSocket/Protocol/WebSocketConnection.swift; sourceTree = "<group>"; };
-		6764B02928DA1D9D00D95ABB /* NWWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NWWebSocket.swift; path = NWWebSocket/NWWebSocket.swift; sourceTree = "<group>"; };
+		67502D9A28DB0A02004815D4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		67502D9E28DB0AC9004815D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67502DA028DB0AD4004815D4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		67502DA228DB0AD7004815D4 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		6764B02528DA1D6B00D95ABB /* NWConnection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NWConnection+Extension.swift"; path = "Extension/NWConnection+Extension.swift"; sourceTree = "<group>"; };
+		6764B02728DA1D9200D95ABB /* WebSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketConnection.swift; path = Protocol/WebSocketConnection.swift; sourceTree = "<group>"; };
+		6764B02928DA1D9D00D95ABB /* NWWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWWebSocket.swift; sourceTree = "<group>"; };
 		6764B03A28DA235400D95ABB /* ctweetnacl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ctweetnacl.c; path = Sources/External/TweetNacl/CTweetNacl/ctweetnacl.c; sourceTree = SOURCE_ROOT; };
 		6764B03C28DA236800D95ABB /* ctweetnacl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ctweetnacl.h; path = Sources/External/TweetNacl/CTweetNacl/include/ctweetnacl.h; sourceTree = SOURCE_ROOT; };
-		6764B03E28DA237D00D95ABB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = TweetNacl/Constant.swift; sourceTree = "<group>"; };
-		6764B03F28DA237D00D95ABB /* TweetNacl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TweetNacl.h; path = TweetNacl/TweetNacl.h; sourceTree = "<group>"; };
-		6764B04028DA237D00D95ABB /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.map; path = TweetNacl/module.map; sourceTree = "<group>"; };
-		6764B04128DA237D00D95ABB /* TweetNacl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetNacl.swift; path = TweetNacl/TweetNacl.swift; sourceTree = "<group>"; };
+		6764B03E28DA237D00D95ABB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6764B03F28DA237D00D95ABB /* TweetNacl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetNacl.h; sourceTree = "<group>"; };
+		6764B04028DA237D00D95ABB /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		6764B04128DA237D00D95ABB /* TweetNacl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetNacl.swift; sourceTree = "<group>"; };
 		736E53F3242A35D90052CC1B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		736E53F6242A45AC0052CC1B /* XCTest+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Assertions.swift"; sourceTree = "<group>"; };
 		73D8A22C2435F381001FDE05 /* ChannelEventFactory+DecryptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChannelEventFactory+DecryptionTests.swift"; sourceTree = "<group>"; };
@@ -242,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				33831C8D1A9CF61600B124F1 /* Info.plist */,
-				3301FED22051AB6400AE591A /* Carthage.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -452,6 +448,7 @@
 				67502D9E28DB0AC9004815D4 /* README.md */,
 			);
 			name = NWWebsocket;
+			path = NWWebSocket;
 			sourceTree = "<group>";
 		};
 		6764B00C28DA197F00D95ABB /* TweetNacl */ = {
@@ -462,10 +459,9 @@
 				6764B03F28DA237D00D95ABB /* TweetNacl.h */,
 				6764B04128DA237D00D95ABB /* TweetNacl.swift */,
 				6764B02F28DA205300D95ABB /* CTweetNacl */,
-				67502D9C28DB0A0A004815D4 /* README.md */,
 				67502D9A28DB0A02004815D4 /* LICENSE */,
 			);
-			name = TweetNacl;
+			path = TweetNacl;
 			sourceTree = "<group>";
 		};
 		6764B02F28DA205300D95ABB /* CTweetNacl */ = {
@@ -474,8 +470,7 @@
 				6764B03A28DA235400D95ABB /* ctweetnacl.c */,
 				6764B03228DA20D100D95ABB /* include */,
 			);
-			name = CTweetNacl;
-			path = TweetNacl/CTweetNacl;
+			path = CTweetNacl;
 			sourceTree = "<group>";
 		};
 		6764B03228DA20D100D95ABB /* include */ = {
@@ -593,7 +588,6 @@
 			files = (
 				67502DA328DB0AD7004815D4 /* LICENSE.md in Resources */,
 				67502D9F28DB0AC9004815D4 /* README.md in Resources */,
-				67502D9D28DB0A0A004815D4 /* README.md in Resources */,
 				67502D9B28DB0A02004815D4 /* LICENSE in Resources */,
 				67502DA128DB0AD4004815D4 /* CHANGELOG.md in Resources */,
 			);
