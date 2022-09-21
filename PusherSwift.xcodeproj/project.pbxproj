@@ -59,6 +59,11 @@
 		53AF00D125D2B02D0005621D /* EventQueueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF00D025D2B02D0005621D /* EventQueueDelegate.swift */; };
 		53F08C4825ECEFFD00BDFFB3 /* PusherChannel+EncryptionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F08C4725ECEFFD00BDFFB3 /* PusherChannel+EncryptionHelpers.swift */; };
 		57F6E444269C5A2E00ECFAD4 /* TestObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F6E443269C5A2E00ECFAD4 /* TestObjects.swift */; };
+		67502D9B28DB0A02004815D4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9A28DB0A02004815D4 /* LICENSE */; };
+		67502D9D28DB0A0A004815D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9C28DB0A0A004815D4 /* README.md */; };
+		67502D9F28DB0AC9004815D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502D9E28DB0AC9004815D4 /* README.md */; };
+		67502DA128DB0AD4004815D4 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502DA028DB0AD4004815D4 /* CHANGELOG.md */; };
+		67502DA328DB0AD7004815D4 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 67502DA228DB0AD7004815D4 /* LICENSE.md */; };
 		6764B02628DA1D6B00D95ABB /* NWConnection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764B02528DA1D6B00D95ABB /* NWConnection+Extension.swift */; };
 		6764B02828DA1D9200D95ABB /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764B02728DA1D9200D95ABB /* WebSocketConnection.swift */; };
 		6764B02A28DA1D9D00D95ABB /* NWWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764B02928DA1D9D00D95ABB /* NWWebSocket.swift */; };
@@ -147,6 +152,11 @@
 		57A44492264942B700984790 /* NWWebSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NWWebSocket.xcframework; path = Carthage/Build/NWWebSocket.xcframework; sourceTree = "<group>"; };
 		57A44494264942BB00984790 /* TweetNacl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TweetNacl.xcframework; path = Carthage/Build/TweetNacl.xcframework; sourceTree = "<group>"; };
 		57F6E443269C5A2E00ECFAD4 /* TestObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjects.swift; sourceTree = "<group>"; };
+		67502D9A28DB0A02004815D4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = TweetNacl/LICENSE; sourceTree = "<group>"; };
+		67502D9C28DB0A0A004815D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		67502D9E28DB0AC9004815D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = NWWebSocket/README.md; sourceTree = "<group>"; };
+		67502DA028DB0AD4004815D4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = NWWebSocket/CHANGELOG.md; sourceTree = "<group>"; };
+		67502DA228DB0AD7004815D4 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = LICENSE.md; path = NWWebSocket/LICENSE.md; sourceTree = "<group>"; };
 		6764B02528DA1D6B00D95ABB /* NWConnection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NWConnection+Extension.swift"; path = "NWWebSocket/Extension/NWConnection+Extension.swift"; sourceTree = "<group>"; };
 		6764B02728DA1D9200D95ABB /* WebSocketConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketConnection.swift; path = NWWebSocket/Protocol/WebSocketConnection.swift; sourceTree = "<group>"; };
 		6764B02928DA1D9D00D95ABB /* NWWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NWWebSocket.swift; path = NWWebSocket/NWWebSocket.swift; sourceTree = "<group>"; };
@@ -437,6 +447,9 @@
 				6764B02928DA1D9D00D95ABB /* NWWebSocket.swift */,
 				6764B02728DA1D9200D95ABB /* WebSocketConnection.swift */,
 				6764B02528DA1D6B00D95ABB /* NWConnection+Extension.swift */,
+				67502DA228DB0AD7004815D4 /* LICENSE.md */,
+				67502DA028DB0AD4004815D4 /* CHANGELOG.md */,
+				67502D9E28DB0AC9004815D4 /* README.md */,
 			);
 			name = NWWebsocket;
 			sourceTree = "<group>";
@@ -449,6 +462,8 @@
 				6764B03F28DA237D00D95ABB /* TweetNacl.h */,
 				6764B04128DA237D00D95ABB /* TweetNacl.swift */,
 				6764B02F28DA205300D95ABB /* CTweetNacl */,
+				67502D9C28DB0A0A004815D4 /* README.md */,
+				67502D9A28DB0A02004815D4 /* LICENSE */,
 			);
 			name = TweetNacl;
 			sourceTree = "<group>";
@@ -459,7 +474,8 @@
 				6764B03A28DA235400D95ABB /* ctweetnacl.c */,
 				6764B03228DA20D100D95ABB /* include */,
 			);
-			path = CTweetNacl;
+			name = CTweetNacl;
+			path = TweetNacl/CTweetNacl;
 			sourceTree = "<group>";
 		};
 		6764B03228DA20D100D95ABB /* include */ = {
@@ -575,6 +591,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67502DA328DB0AD7004815D4 /* LICENSE.md in Resources */,
+				67502D9F28DB0AC9004815D4 /* README.md in Resources */,
+				67502D9D28DB0A0A004815D4 /* README.md in Resources */,
+				67502D9B28DB0A02004815D4 /* LICENSE in Resources */,
+				67502DA128DB0AD4004815D4 /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
