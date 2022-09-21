@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-#import <ctweetnacl.h>
+#import "ctweetnacl.h"
 
 //! Project version number for PusherSwift.
 FOUNDATION_EXPORT double PusherSwiftVersionNumber;
