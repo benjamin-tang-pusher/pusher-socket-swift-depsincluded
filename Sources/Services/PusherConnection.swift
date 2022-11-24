@@ -342,12 +342,7 @@ import Foundation
         }
     }
 
-    /**
-        Set the connection state to disconnected, mark channels as unsubscribed,
-        reset connection-related state to initial state, and initiate reconnect
-        process
-    */
-    private func resetConnectionAndAttemptReconnect() {
+    internal func resetConnection() {
         if connectionState != .disconnected {
             updateConnectionState(to: .disconnected)
         }
@@ -361,7 +356,16 @@ import Foundation
         socketConnected = false
         connectionEstablishedMessageReceived = false
         socketId = nil
-        
+    }
+
+    /**
+        Set the connection state to disconnected, mark channels as unsubscribed,
+        reset connection-related state to initial state, and initiate reconnect
+        process
+    */
+    private func resetConnectionAndAttemptReconnect() {
+        resetConnection()
+
         guard !intentionalDisconnect else {
             return
         }
@@ -462,7 +466,7 @@ import Foundation
                 }
             }
         }
-        
+
         let subscriptionEvent = event.copy(withEventName: Constants.Events.Pusher.subscriptionSucceeded)
         callGlobalCallbacks(event: subscriptionEvent)
         chan.handleEvent(event: subscriptionEvent)
@@ -552,13 +556,13 @@ import Foundation
             Logger.shared.debug(for: .unableToRemoveMemberFromChannel)
         }
     }
-    
+
     /**
         Handle subscription count event
-     
+
         - parameter event: The event to be processed
      */
-    
+
     private func handleSubscriptionCountEvent(event: PusherEvent) {
         guard let channelName = event.channelName,
               let channel = self.channels.find(name: channelName),
@@ -566,7 +570,7 @@ import Foundation
               let count = subscriptionCountData[Constants.JSONKeys.subscriptionCount] as? Int else {
             return
         }
-        
+
         channel.updateSubscriptionCount(count: count)
     }
 
@@ -627,7 +631,7 @@ import Foundation
 
         case Constants.Events.PusherInternal.memberRemoved:
             handleMemberRemovedEvent(event: event)
-        
+
         case Constants.Events.PusherInternal.subscriptionCount:
             handleSubscriptionCountEvent(event: event)
 
@@ -651,14 +655,14 @@ import Foundation
     }
 
     /**
-        Uses the appropriate authentication method to authenticate subscriptions to private and
+        Uses the appropriate authorization method to authorize subscriptions to private and
         presence channels
 
-        - parameter channel: The PusherChannel to authenticate
-        - parameter auth:    A PusherAuth value if subscription is being made to an
-                             authenticated channel without using the default auth methods
+        - parameter channel: The PusherChannel to authorize
+        - parameter auth:    A PusherAuth value if subscription is being made to a
+                             channel without using the default authorization method
 
-        - returns: A Bool indicating whether or not the authentication request was made
+        - returns: A Bool indicating whether or not the authorization request was made
                    successfully
     */
     private func authorize(_ channel: PusherChannel, auth: PusherAuth? = nil) -> Bool {
